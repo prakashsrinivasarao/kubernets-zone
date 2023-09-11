@@ -10,8 +10,7 @@ spec:
     ports:
     - containerPort: 80
       protocol: TCP
-
-  - name: jenkins
+- name: jenkins
     image: jenkins/jenkins:jdk17
     ports:
       - containerport: 8080
