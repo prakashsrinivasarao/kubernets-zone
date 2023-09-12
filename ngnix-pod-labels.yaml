@@ -3,8 +3,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: ngnix
-  label:
-    app: ngnix-pod-label
+  labels:
+    app: ngnix-pod-labels
     env: dev
     release: v1.1
 spec:
@@ -12,7 +12,7 @@ spec:
     - name: ngnix
       image: ngnix:1.14.1
       ports:
-        - containersPorts: 80
+        - containerPort: 80
           protocol: TCP
 
 
@@ -20,8 +20,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: ngnix-pod
-  label:
-    app: ngnix-pod-label1
+  labels:
+    app: ngnix-pod-labels1
     env: qv
     release: v1.1
 spec:
@@ -29,5 +29,5 @@ spec:
     - name: ngnix
       image: ngnix:1.14.1
       ports:
-        - containersPorts: 80
+        - containerPort: 8080
           protocol: TCP
