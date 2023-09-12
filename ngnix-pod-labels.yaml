@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ngnix
+  name: ngnix-pod-labels
   labels:
-    app: ngnix-pod-labels
+    app: ngnix
     env: dev
     release: v1.1
 spec:
@@ -19,9 +19,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ngnix-pod
+  name: ngnix-pod-labels1
   labels:
-    app: ngnix-pod-labels1
+    app: ngnix
     env: qv
     release: v1.1
 spec:
