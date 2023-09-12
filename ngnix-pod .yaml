@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  spec:
+    -containers: webserver
+     image: ngnix 1.25
