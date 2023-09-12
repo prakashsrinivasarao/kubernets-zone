@@ -14,8 +14,7 @@ spec:
       ports:
         - containerPort: 80
           protocol: TCP
-
-
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -31,3 +30,4 @@ spec:
       ports:
         - containerPort: 8080
           protocol: TCP
+
